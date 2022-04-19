@@ -46,11 +46,15 @@ int main()
 	srand(time(0));
 	for (int i = 0; i < 10; i++)
 	{
+		cout << i << " draw" << endl;
 		test = of.getObject(game.randType());
 		game.randSize(test);
 		game.randCoord(test);
 		test->draw();
+		cout << endl;
 	}
+
+	of.dispList();
 
 	return 0;
 }
